@@ -38,7 +38,7 @@
                 width = this.options.maxWidth;
             }
             this.options.fontSize = width / this.ratio;
-            $('body').css('font-size', this.options.fontSize);
+            $(element).css('font-size', this.options.fontSize);
         }
     };
 
