@@ -3,8 +3,7 @@
     var pluginName = 'responsiveFonts',
         defaults = {
             minWidth : 960,
-            maxWidth : 1920,
-            fontSize : 14
+            maxWidth : 1920
         };
 
     // The actual plugin constructor
@@ -21,7 +20,7 @@
     Plugin.prototype = {
         ratio: 0,
         init: function() {
-            this.ratio = this.options.minWidth / this.options.fontSize;
+            this.ratio = this.options.minWidth / parseInt($('body').css('font-size'), 10);
             this.bindEvents();
         },
         bindEvents: function(){
@@ -39,7 +38,7 @@
                 width = this.options.maxWidth;
             }
             this.options.fontSize = width / this.ratio;
-            this.element.css('font-size', this.options.fontSize);
+            $('body').css('font-size', this.options.fontSize);
         }
     };
 
