@@ -84,6 +84,31 @@ header h2 {
   line-height: 1.3;
 }
 
+.rf h1, .rf h2, .rf h3{
+  font-weight: 100;
+  line-height: 1.2em;
+  margin: 0 0 0.5em 0;
+}
+.rf h1{
+  font-size: 3em;
+}
+.rf h2{
+  font-size: 2.2em;
+}
+.rf h3{
+  font-size: 1.8em;
+}
+.rf p{
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.rf {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
 #container {
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
   min-height: 595px;
@@ -277,6 +302,7 @@ h6 {
 p {
   font-weight: 300;
   margin-bottom: 20px;
+  font-size: 16px;
 }
  
 a {
